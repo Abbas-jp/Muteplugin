@@ -1,0 +1,24 @@
+name: Muteplugin
+version: '1.0-APLHA'
+main: me.muteplugin.Muteplugin
+api-version: '1.13'
+authors: [ AbdelrahmanMoharram ]
+commands:
+  mute:
+    description: Temporarily mutes a player.
+    usage: /mute <player> <duration>
+    permission: muteplugin.mute
+  unmute:
+    description: Unmutes a player.
+    usage: /unmute <player>
+    permission: muteplugin.unmute
+permissions:
+  muteplugin.mute:
+    description: Allows players to use the mute command.
+    default: op
+  muteplugin.unmute:
+    description: Allows players to use the unmute command.
+    default: op
+  muteplugin.staff:
+    description: Receives staff alerts for mute/unmute events.
+    default: op
